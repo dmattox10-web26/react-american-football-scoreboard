@@ -1,8 +1,7 @@
 import React from "react";
 import "./App.css";
 
-const BottomRow = () => {
-  const { quarter } = this.props
+const BottomRow = (props) => {
   return (
     <div className="bottomRow">
       <div className="down">
@@ -19,7 +18,7 @@ const BottomRow = () => {
       </div>
       <div className="quarter">
         <h3 className="quarter__title">Quarter</h3>
-        <div className="quarter__value">{ quarter }</div>
+        <div className="quarter__value">{ props.quarter }</div>
       </div>
     </div>
   );
